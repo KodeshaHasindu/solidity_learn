@@ -1,0 +1,151 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_merkleTreeAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_bankAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "bankContract",
+				"outputs": [
+					{
+						"internalType": "contract Bank",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "merkleTreeContract",
+				"outputs": [
+					{
+						"internalType": "contract MerkleTree",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32[]",
+						"name": "_merkleProof",
+						"type": "bytes32[]"
+					}
+				],
+				"name": "whitelistMint",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tests/new/new.sol": "MerkleTreeBankIntegration"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/utils/cryptography/MerkleProof.sol": {
+			"keccak256": "0x6400c4bee15052e043e5d10315135972529bd1c8012f43da494dc6b4f4661058",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://da5d3d47d35af4373743a559ea4b9b7ecfe4bab6f0703f410c1e59959b7966ac",
+				"dweb:/ipfs/QmTHdoghh4WLu4yURjGEgRk162pcwwdsG52MPGa12GqnGR"
+			]
+		},
+		"tests/new/new.sol": {
+			"keccak256": "0xcd60eb896ba6a38f911e6b3f816bbc43b3ddf1cfa00149b7829629ea69d69737",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4273e5c372c25b535f39305e06377d9e71275073f10ab6e136430547abdedac1",
+				"dweb:/ipfs/QmRUmRDMrHPvQNpa6gBn1eYhnp46A1gu6fQQsYfrjfWdaX"
+			]
+		},
+		"tests/new/usecase2.sol": {
+			"keccak256": "0xc975df1dbee0716832c87f36a6b46c7120369cc0c1f061510fe01bb144d0893d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1783cd6c7a84c1a2a19f7592fe1c66adcbc062f8f983b9bcfdee91ca3c4dd39d",
+				"dweb:/ipfs/QmNjyUDhFfH1h29kQr4RVPpym77n5ist4prU14CN4g7ogv"
+			]
+		},
+		"tests/new/usecase2part2.sol": {
+			"keccak256": "0x54322a69de13cfa81ebce034e4b79c3d05a036535343c0031066086f1b518fb1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e4133b942d832bc516e7cd3ae603c09303af2f630fe26edae244b61297dccc63",
+				"dweb:/ipfs/QmcCVDxKzCAR9iPeFpiSBhDAzV1nQp27dEqqKP22Z7w4Uh"
+			]
+		}
+	},
+	"version": 1
+}
